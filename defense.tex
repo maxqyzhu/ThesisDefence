@@ -1,0 +1,50 @@
+% !TeX spellcheck = en_GB
+\documentclass[english,11pt,aspectratio=1610,xcolor=table]{beamer}
+\input{tex/setup}
+\input{tex/setup-colors}
+\input{tex/setup-settings}
+
+\usetheme{JD}
+\beamertemplatenavigationsymbolsempty
+
+
+\makeatletter
+\setbeamertemplate{title page}[default][left,colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]
+\makeatother
+
+% header fields: usage
+% \field
+%     [short form (footline)]
+%     {long form on title page}
+%
+\title{
+    Online Resource Allocation and Its Applications}
+
+% \subtitle{Final presentation} % short version unused by this template
+\author
+    [Qiuyu Zhu]
+    {Qiuyu Zhu}
+\institute
+    [\hypersetup{urlcolor=jdgrey}%
+      \href{https://iora.nus.edu.sg/}{IORA} %
+    %  \href{http://www.ei.tum.de/}{EI} %
+    %  \href{http://www.ens.ei.tum.de/}{ENS}
+    ]
+    {Institute of Operations Research and Analytics\\%
+     National University of Singapore}
+\date
+    [01/2022]
+    {01 Jan 2022}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+\input{chapters/INTRO}
+\input{chapters/ORA}
+\input{chapters/MAB}
+\end{document}
